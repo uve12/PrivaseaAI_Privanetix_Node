@@ -54,6 +54,7 @@ IOS : https://apps.apple.com/us/app/imhuman/id6482989056
 Andriod : https://play.google.com/store/apps/details?id=com.app.imhuman
 
 1. Create an account
+- ref code : y98NrJs
 2. Scan your biometric data
 3. Your unique NFT is minted
 4. Verify your facial vectors(Testify your liveness)
