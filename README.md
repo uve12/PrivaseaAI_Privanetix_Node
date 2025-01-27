@@ -153,15 +153,37 @@ mv ./UTC--*  ./wallet_keystore
 ### Start the node
 
 ```
-cd .. 
+cd /privasea/ 
 docker run  -d   -v "/privasea/config:/app/config" -e KEYSTORE_PASSWORD=123456 privasea/acceleration-node-beta:latest
 ```
+
+**Replace with your password**
 
 ### Check Node Health
 
 ```
 docker logs -f 
 ```
+
+---
+
+## Update node
+
+
+### stop node
+
+```
+docker ps -q --filter "ancestor=privasea/acceleration-node-beta:latest" | xargs --no-run-if-empty docker stop
+docker ps | grep privasea/acceleration-node-beta:latest
+```
+
+**Replace with your password**
+
+```
+cd /privasea/
+docker run  -d   -v "/privasea/config:/app/config" -e KEYSTORE_PASSWORD=123456 privasea/acceleration-node-beta:latest
+```
+
 
 ---
 
